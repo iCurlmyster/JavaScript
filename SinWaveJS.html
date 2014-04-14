@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>The Canvas!</title>
+	</head>
+	<body style="margin: 0px;">
+	
+	<canvas height="500" width="500" id="myCanvas"> </canvas>
+	
+	
+	<script language="javascript">
+	<!--
+		var theCanvas = document.getElementById("myCanvas"),
+			c = theCanvas.getContext("2d"),
+			d = theCanvas.getContext("2d"),
+			x, y, width = 10, height = 10, time = 0;
+			
+		
+		var render = function() {
+		
+			c.clearRect(0,0,theCanvas.width,theCanvas.height);//	this clears the entire canvas
+			
+		
+		var i, sin, numberOfSquares = 100;
+		for(i = 0;i < 100; i++){
+			sin = Math.sin(i / 20 + time) / 2 + 0.5;
+			x = sin * (theCanvas.width - width);
+			y = i * 3;
+			c.fillStyle = "green";
+			c.fillRect(x,y,width,height);
+		}
+		var g, cos;
+		for(g = 0;g < 100; g++){
+			cos = Math.cos(g / 20 + time) / 2 + 0.5;
+			x = cos * (theCanvas.width - width);
+			y = g * 3;
+			d.fillStyle = "blue";
+			d.fillRect(x,y,width,height);
+		}
+		
+		time += 0.01
+		};
+		
+		
+		
+		setInterval(render,20);
+		
+		
+		
+	-->
+	</script>
+	</body>
+</html>
